@@ -4,4 +4,10 @@ Rails.application.routes.draw do
   #   GET /activities
   #   DELETE /activities/:id
   resources :activities, only: [:index, :destroy]
+
+  # Campers Routes
+  #   GET /campers
+  #   GET /campers/:id
+  #   POST /campers
+  resources :campers, only: [:index, :show, :create]
 end
