@@ -10,4 +10,8 @@ Rails.application.routes.draw do
   #   GET /campers/:id
   #   POST /campers
   resources :campers, only: [:index, :show, :create]
+
+  # Signup Routes
+  #   POST /signups
+  resources :signups, only: [:create]
 end
